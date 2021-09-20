@@ -4,6 +4,7 @@ import logging
 
 from datetime import date
 
+
 # Try to open a file in read mode. If unsuccessful the method handles the error and tries again.
 def open_file():
     file_opened = False
@@ -117,8 +118,8 @@ for key, value in unique_dates.items():
         sundays[key] = value
 
 # Add every day to a dictionary that correlates the day of the week to the value of days.
-allDays = {'Mondays' : mondays, 'Tuesdays' : tuesdays, 'Wednesdays' : wednesdays, 'Thursdays' : thursdays,
-           'Fridays' : fridays, 'Saturdays' : saturdays, 'Sundays' : sundays}
+allDays = {'Mondays': mondays, 'Tuesdays': tuesdays, 'Wednesdays': wednesdays, 'Thursdays': thursdays,
+           'Fridays': fridays, 'Saturdays': saturdays, 'Sundays': sundays}
 
 # Iterate through each value inside of each dictionary of days stored in allDays.
 for day in allDays:
